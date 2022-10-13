@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LIVCast</title>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+</head>
+
+<body>
+    <header class="header">
+        <a id="logo" href="">LIVCast</a>
+        <ul style="width:100%;">
+            <div style="display:flex; justify-content: space-between; margin-right: 4rem;">
+                <div>
+                    <li><a class="active nav-items" href="#">Home</a></li>
+                    <li><a class="nav-items" href="#sec3">About</a></li>
+                    <li><a class="nav-items" href="#foot">Contact</a></li>
+                </div>
+                <div>
+                    <li><a class="sign" href="#">SIGN IN</a></li>
+                </div>
+            </div>
+        </ul>
+    </header>
+    <div class="sec" id="sec1">
+        <div class="data">
+            <div class="search collect">
+                <div id="city">
+                    <div>
+                        <p style="font-family: 'Barlow', sans-serif;font-weight: 400;"><span id="temp_big"
+                                style="font-size: 5rem;">_</span><span id="degree"
+                                style="font-size: 3rem;margin-left: 1rem;">°C</span> </p>
+                        <p id="city_name" style="font-size: 2rem;font-family: 'Barlow', sans-serif;font-weight: 500;">
+                            __,__</p>
+                    </div>
+                    <div class="status">
+                        <div><img class="st_img" src="" alt=""></div>
+                        <div id="main"
+                            style="font-size: 1.3rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ">
+                        </div>
+                    </div>
+                </div>
+                <div id="city_data" class="data">
+                    <div class="data_box">
+                        <div class="task"><img src="./images/thermo.png" alt=""
+                                style="width:100%; height:100%; padding:1rem"></div>
+                        <div class="task" id="temp-display" style="padding:0.1rem; display: flex; align-items: center;">
+                            Max: ____°C <br>Min: ____°C </div>
+                    </div>
+                    <div class="data_box">
+                        <div class="task"><img src="./images/humid.png" alt=""
+                                style="width:100%; height:100%; padding:1rem"></div>
+                        <div class="task" id="humid-display"
+                            style="padding:0.1rem; display: flex; align-items: center;">__% <br>Humidity</div>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="qsearch">
+                    <div class="search_city">
+                        <input type="text" title="Search Your City" placeholder="Search Your City..." required> <button
+                            id="go"><img id="search_img" src="./images/serach.png" alt=""></button>
+                    </div>
+                    <div id="recent">
+                        Recent searches...
+                    </div>
+                </div>
+                <div class="brief">
+                    <p class="data_font">Pressure : <span id="pressure">____</span> millibars</p>
+                    <!-- <p class="data_font">Precipitation : <span id="preci"></span> </p> -->
+                    <p class="data_font">Wind Speed : <span id="wind">____</span> metre/sec </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec2">
+        <div id="details_head">Complete Details</div>
+        <div id="details_body">
+            <div id="details_body_div">
+                <div style="font-size:3rem; font-weight: 500;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    ____,____
+                </div><br><br>
+                <div id="det">Latitude: ____<br> Longitude: ____ <br> Current Temperature: __ °C <br> Min Temperature:
+                    __ °C <br> Max Temperature: __ °C <br> Pressure: ____ millibars <br> Humidity: __% <br> Wind-speed:
+                    ____
+                    metre/sec <br> Gust: ____ metre/sec <br> Visibility: ____ kilometre(s) <br> Wind-direction: ____
+                    Degree
+                    <br> Cloudiness: ____ %
+                </div>
+            </div>
+            <div class="status" style="background-color:lightblue ; ">
+                <div><img class="st_img" src="" alt="" style="width:10rem; height: auto;"></div>
+                <div id="desc"
+                    style="font-size: 1.3rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec3">
+        <!-- <div class="data" id="sec3-box"> -->
+        <div class="info-box">
+            <div id="abo_dev">About the Developer</div>
+            <div id="readmore">Learn More</div>
+            <!-- </div> -->
+            <!-- <div class="info-box"></div> -->
+        </div>
+
+    </div>
+    <div class="footer" id="foot">
+        <div>
+            <div><a href="https://www.linkedin.com/in/shobhit-chauhan-7491bb203/" target="_blank"
+                    style="text-decoration:none; color: beige; font-size: 1rem;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Connect
+                    us on LinkedIn</a></div>
+            <div></div>
+        </div>
+        <div
+            style="text-decoration:none; color: beige; font-size: 1rem;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Complete Project on Github <br> Link: <a href="" target="_blank" style="text-decoration:none; color: black; font-size: 1rem;font-family:'Courier New', Courier, monospace">[Click Here]</a></div>
+
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
