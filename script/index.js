@@ -46,7 +46,7 @@ go.addEventListener('click', () => {
         // qs_city.classList.add("error")
         alert("Please Enter a valid City Name.")
     }
-    // console.log(city)
+
 })
 function requestApi(city) {
     let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_key}`;
